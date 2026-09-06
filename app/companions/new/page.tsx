@@ -5,6 +5,10 @@ import {newCompanionPermissions} from "@/lib/actions/companion.actions";
 import Image from "next/image";
 import Link from "next/link";
 
+// Reads the signed-in user (Clerk's auth() inspects request headers), so this
+// page cannot be prerendered at build time.
+export const dynamic = 'force-dynamic';
+
 const NewCompanion = async () => {
     const { userId } = await auth();
     if(!userId) redirect('/sign-in');

@@ -9,6 +9,10 @@ import { getSubjectColor } from "@/lib/utils";
 import DocumentUploader from "@/components/ui/DocumentUploader";
 import DocumentList from "@/components/ui/DocumentList";
 
+// Reads the signed-in user (Clerk's auth() inspects request headers), so this
+// page cannot be prerendered at build time.
+export const dynamic = 'force-dynamic';
+
 interface DocumentsPageProps {
     params: Promise<{ id: string }>;
 }

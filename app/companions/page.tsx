@@ -5,6 +5,10 @@ import {getSubjectColor} from "@/lib/utils";
 import SearchInput from "@/components/ui/SearchInput";
 import SubjectFilter from "@/components/ui/SubjectFilter";
 
+// Reads the signed-in user (Clerk's auth() inspects request headers), so this
+// page cannot be prerendered at build time.
+export const dynamic = 'force-dynamic';
+
 const CompanionsLibrary = async ({ searchParams }:SearchParams) => {
     const filters = await searchParams;
 

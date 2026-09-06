@@ -8,6 +8,10 @@ import Link from "next/link";
 import Image from "next/image";
 import CompanionComponent from "@/components/ui/CompanionComponent";
 
+// Reads the signed-in user (Clerk's auth() inspects request headers), so this
+// page cannot be prerendered at build time.
+export const dynamic = 'force-dynamic';
+
 interface CompanionSessionPageProps{
     params: Promise<{ id: string}>
 }

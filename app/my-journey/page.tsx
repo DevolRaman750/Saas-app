@@ -11,6 +11,10 @@ import {getUserCompanions, getUserSessions} from "@/lib/actions/companion.action
 import Image from "next/image";
 import CompanionList from "@/components/ui/CompanionList";
 
+// Reads the signed-in user (Clerk's auth() inspects request headers), so this
+// page cannot be prerendered at build time.
+export const dynamic = 'force-dynamic';
+
 const Profile = async () => {
     const user = await currentUser();
 
