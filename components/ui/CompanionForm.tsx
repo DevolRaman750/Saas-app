@@ -59,7 +59,9 @@ const CompanionForm = () => {
         const companion = await createCompanion(values);
 
         if(companion){
-            redirect(`/companions/`)
+            // Step two is the knowledge base, which needs the companion to exist
+            // before a PDF can be attached to it.
+            redirect(`/companions/${companion.id}/documents`)
         }
         else {
             console.log("Companion Failed to Create Companion");
@@ -156,7 +158,7 @@ const CompanionForm = () => {
                                     <SelectContent>
                                         <SelectItem value="male">
                                             Male
-                                        </SelectItem> <SelectItem value="femal">
+                                        </SelectItem> <SelectItem value="female">
                                             Female
                                         </SelectItem>
 

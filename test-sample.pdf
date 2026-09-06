@@ -1,0 +1,85 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 520 >>
+stream
+BT
+/F1 12 Tf
+72 720 Td
+16 TL
+(Chapter One: Plant Biology) Tj T*
+(Plants manufacture their own food through a process that captures) Tj T*
+(sunlight. Chlorophyll in the chloroplasts absorbs photons and drives) Tj T*
+(the conversion of carbon dioxide and water into glucose and oxygen.) Tj T*
+(The light dependent reactions occur in the thylakoid membrane, while) Tj T*
+(the Calvin cycle fixes carbon in the stroma. A single leaf can host) Tj T*
+(roughly five hundred thousand chloroplasts per square millimetre.) Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 443 >>
+stream
+BT
+/F1 12 Tf
+72 720 Td
+16 TL
+(Chapter Two: European History) Tj T*
+(The Treaty of Versailles was signed on the twenty eighth of June) Tj T*
+(nineteen nineteen in the Hall of Mirrors. It imposed reparations of) Tj T*
+(one hundred thirty two billion gold marks on Germany and redrew the) Tj T*
+(borders of central Europe. Article two hundred thirty one assigned) Tj T*
+(responsibility for the war, a clause that became deeply resented.) Tj T*
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 457 >>
+stream
+BT
+/F1 12 Tf
+72 720 Td
+16 TL
+(Chapter Three: Algorithms) Tj T*
+(Binary search locates a value in a sorted array by repeatedly halving) Tj T*
+(the interval under consideration. Because the search space shrinks by) Tj T*
+(half on every comparison, the running time is logarithmic. An array of) Tj T*
+(one million elements needs at most twenty comparisons. The array must) Tj T*
+(already be sorted, which is the precondition people most often forget.) Tj T*
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000000894 00000 n 
+0000001020 00000 n 
+0000001514 00000 n 
+0000001640 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+2148
+%%EOF

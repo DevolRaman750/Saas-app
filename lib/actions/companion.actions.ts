@@ -125,7 +125,10 @@ export const newCompanionPermissions = async () => {
     const { userId, has } = await auth();
     const supabase = createSupabaseClient();
 
-    let limit = 0;
+    // Free allowance. Without this, an account with no billing features
+    // configured computes a limit of 0, which makes the very first companion
+    // fail the `count >= limit` check and locks every user out of the builder.
+    let limit = 3;
 
     if(has({ plan: 'pro' })) {
         return true;

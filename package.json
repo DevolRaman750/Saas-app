@@ -18,7 +18,6 @@
     "@radix-ui/react-slot": "^1.2.3",
     "@sentry/nextjs": "^10.11.0",
     "@supabase/supabase-js": "^2.50.3",
-    "@vapi-ai/web": "^2.3.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lottie-react": "^2.4.1",
@@ -27,7 +26,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.60.0",
+    "server-only": "^0.0.1",
     "tailwind-merge": "^3.3.1",
+    "unpdf": "^1.8.1",
     "zod": "^3.25.74"
   },
   "devDependencies": {
@@ -36,9 +37,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
     "tailwindcss": "^4",
+    "tsx": "^4.23.13",
     "tw-animate-css": "^1.3.5",
     "typescript": "^5"
   }

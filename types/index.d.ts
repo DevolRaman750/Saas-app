@@ -71,6 +71,22 @@ interface SavedMessage {
   content: string;
 }
 
+interface CompanionDocument {
+  id: string;
+  file_name: string;
+  status: "queued" | "processing" | "ready" | "failed";
+  page_count: number | null;
+  pages_done: number | null;
+  chunk_count: number | null;
+  error_message: string | null;
+  created_at?: string;
+}
+
+interface RagCitation {
+  fileName: string;
+  page: number;
+}
+
 interface CompanionComponentProps {
   companionId: string;
   subject: string;
@@ -80,4 +96,5 @@ interface CompanionComponentProps {
   userImage: string;
   voice: string;
   style: string;
+  documents?: CompanionDocument[];
 }

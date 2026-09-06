@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
     eslint: {
         ignoreDuringBuilds: true
     },
+    // unpdf ships a pdf.js build that uses import.meta, which webpack cannot
+    // bundle cleanly. Loading it as a real Node module on the server avoids the
+    // build warning and the runtime edge cases it hints at.
+    serverExternalPackages: ['unpdf'],
   images:{
       remotePatterns:[
           { hostname: 'img.clerk.com'}
